@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         /* ************************ */
         /*  4. rotate pizza image   */
         /* ************************ */
-        // rotateImage()
+         rotateImage()
     }
     
     func updateArrayCounter() {
@@ -55,6 +55,7 @@ class ViewController: UIViewController {
             self.pizzaImage.transform = self.pizzaImage.transform.rotated(by: CGFloat( Double.pi))
         }) { (result) in
             if self.spinCounter > 4 {
+                self.updateArrayCounter()
                 self.updatePizzaImage()
                 self.updatePizzaName()
                 self.spinCounter = 0

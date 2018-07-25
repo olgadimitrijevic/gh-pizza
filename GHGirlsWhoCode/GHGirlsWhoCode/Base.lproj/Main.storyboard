@@ -25,8 +25,8 @@
                                     <constraint firstAttribute="width" constant="140" id="jCT-Dd-FPr"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello ... (your name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-ms-MQI">
-                                <rect key="frame" x="38" y="106" width="299" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-ms-MQI">
+                                <rect key="frame" x="149" y="106" width="77.5" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="3ul-tp-CuA"/>
                                 </constraints>
@@ -35,13 +35,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button to change your pizza topping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-wR-Xzj">
-                                <rect key="frame" x="36" y="189" width="302" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <rect key="frame" x="19" y="189" width="338" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-cb-W0n">
-                                <rect key="frame" x="133" y="473" width="108" height="45"/>
+                                <rect key="frame" x="133" y="521" width="108" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <state key="normal" title="Click me"/>
                                 <connections>
@@ -49,7 +49,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="supreme pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ih-YW-Wa0">
-                                <rect key="frame" x="129" y="424" width="118" height="21"/>
+                                <rect key="frame" x="129" y="406" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,13 +58,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xGz-ms-MQI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="4JJ-DW-Y7c"/>
-                            <constraint firstItem="3Ih-YW-Wa0" firstAttribute="top" secondItem="aIA-y6-2g5" secondAttribute="bottom" constant="21" id="4px-u0-m7i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bGe-cb-W0n" secondAttribute="bottom" constant="149" id="9SN-ed-lSW"/>
+                            <constraint firstItem="3Ih-YW-Wa0" firstAttribute="top" secondItem="aIA-y6-2g5" secondAttribute="bottom" constant="3" id="4px-u0-m7i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bGe-cb-W0n" secondAttribute="bottom" constant="101" id="9SN-ed-lSW"/>
                             <constraint firstItem="xGz-ms-MQI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AhF-zP-lOC"/>
                             <constraint firstItem="aIA-y6-2g5" firstAttribute="top" secondItem="QNa-wR-Xzj" secondAttribute="bottom" constant="57" id="ECu-Su-KlX"/>
                             <constraint firstItem="aIA-y6-2g5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EIW-l6-fEX"/>
                             <constraint firstItem="aIA-y6-2g5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NJM-EC-RJo"/>
-                            <constraint firstItem="bGe-cb-W0n" firstAttribute="top" secondItem="3Ih-YW-Wa0" secondAttribute="bottom" constant="28" id="R48-gt-Q1d"/>
+                            <constraint firstItem="bGe-cb-W0n" firstAttribute="top" secondItem="3Ih-YW-Wa0" secondAttribute="bottom" constant="94" id="R48-gt-Q1d"/>
                             <constraint firstItem="bGe-cb-W0n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhU-aY-VfU"/>
                             <constraint firstItem="QNa-wR-Xzj" firstAttribute="top" secondItem="xGz-ms-MQI" secondAttribute="bottom" constant="41" id="e2P-lW-1Sg"/>
                             <constraint firstItem="QNa-wR-Xzj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yPS-IH-d5d"/>
