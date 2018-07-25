@@ -1,25 +1,67 @@
-//
-//  ViewController.swift
-//  GHGirlsWhoCode
-//
-//  Created by Olga Dimitrijevic on 7/25/18.
-//  Copyright © 2018 Olga Dimitrijevic. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var pizzaImage: UIImageView!
+    @IBOutlet weak var pizzaButton: UIButton!
+    @IBOutlet weak var pizzaName: UILabel!
+    
+    let pizzaImageArray = ["supreme", "cheese-mushroom", "pepperoni", "sausage-pepper","spinach-tomato"]
+    
+    var spinCounter = 0
+    var counter = 0
+
+
+    @IBAction func clickPizzaButton(_ sender: Any) {
+        /* ************************ */
+        /*  1. update counter       */
+        /* ************************ */
+        // updateArrayCounter()
+        
+        /* ************************ */
+        /*  2. update pizza image   */
+        /* ************************ */
+        // updatePizzaImage()
+        
+        /* ************************ */
+        /*  3. update pizza name    */
+        /* ************************ */
+        // updatePizzaName()
+        
+        /* ************************ */
+        /*  4. rotate pizza image   */
+        /* ************************ */
+        // rotateImage()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func updateArrayCounter() {
+        if counter < 4 {
+            counter += 1
+        } else {
+            counter = 0
+        }
     }
-
-
+    
+    func updatePizzaImage() {
+        pizzaImage.image = UIImage(named: pizzaImageArray[counter])
+    }
+    
+    func updatePizzaName() {
+        pizzaName.text = pizzaImageArray[counter]
+    }
+    
+    func rotateImage() {
+        UIView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+            self.pizzaImage.transform = self.pizzaImage.transform.rotated(by: CGFloat( Double.pi))
+        }) { (result) in
+            if self.spinCounter > 4 {
+                self.updatePizzaImage()
+                self.updatePizzaName()
+                self.spinCounter = 0
+            } else {
+                self.rotateImage()
+                self.spinCounter += 1
+            }
+        }
+    }
 }
-
