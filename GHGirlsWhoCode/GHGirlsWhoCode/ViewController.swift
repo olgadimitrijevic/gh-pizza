@@ -11,27 +11,18 @@ class ViewController: UIViewController {
     var spinCounter = 0
     var counter = 0
 
-
     @IBAction func clickPizzaButton(_ sender: Any) {
-        /* ************************ */
-        /*  1. update counter       */
-        /* ************************ */
-        // updateArrayCounter()
-        
-        /* ************************ */
-        /*  2. update pizza image   */
-        /* ************************ */
-        // updatePizzaImage()
-        
-        /* ************************ */
-        /*  3. update pizza name    */
-        /* ************************ */
-        // updatePizzaName()
+        /* ******************************** */
+        /*  1 - 3. rotate pizza image       */
+        /* ******************************** */
+         updateArrayCounter()
+         updatePizzaImage()
+         updatePizzaName()
         
         /* ************************ */
         /*  4. rotate pizza image   */
         /* ************************ */
-         rotateImage()
+        // rotateImage()
     }
     
     func updateArrayCounter() {
