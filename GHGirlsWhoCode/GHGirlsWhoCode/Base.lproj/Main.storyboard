@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="supreme" translatesAutoresizingMaskIntoConstraints="NO" id="aIA-y6-2g5">
-                                <rect key="frame" x="117" y="263" width="140" height="140"/>
+                                <rect key="frame" x="117.5" y="263" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="Fpg-A0-aeM"/>
                                     <constraint firstAttribute="width" constant="140" id="jCT-Dd-FPr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello ... (your name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-ms-MQI">
-                                <rect key="frame" x="39" y="106" width="299" height="42"/>
+                                <rect key="frame" x="38" y="106" width="299" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="3ul-tp-CuA"/>
                                 </constraints>
@@ -35,21 +35,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the button to change your pizza topping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-wR-Xzj">
-                                <rect key="frame" x="28.5" y="189" width="319.5" height="17"/>
+                                <rect key="frame" x="28" y="189" width="319.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-cb-W0n">
-                                <rect key="frame" x="133" y="521" width="108" height="45"/>
+                                <rect key="frame" x="133.5" y="521" width="108" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <state key="normal" title="Click me"/>
-                                <connections>
-                                    <action selector="clickPizzaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j53-D7-jzm"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="supreme pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ih-YW-Wa0">
-                                <rect key="frame" x="129" y="406" width="118" height="21"/>
+                                <rect key="frame" x="128.5" y="406" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,11 +69,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="pizzaButton" destination="bGe-cb-W0n" id="3Ix-Xg-mwV"/>
-                        <outlet property="pizzaImage" destination="aIA-y6-2g5" id="wBo-f1-ocI"/>
-                        <outlet property="pizzaName" destination="3Ih-YW-Wa0" id="Ajq-FP-yVa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

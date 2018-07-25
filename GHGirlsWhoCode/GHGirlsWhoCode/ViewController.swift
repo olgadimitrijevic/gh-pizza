@@ -1,7 +1,14 @@
 import UIKit
 
+/* ************************************************ */
+/*  0. view and update storyboard                   */
+/* ************************************************ */
+
 class ViewController: UIViewController {
 
+    /* ************************************************ */
+    /*  1. hook up outlets and actions                  */
+    /* ************************************************ */
     @IBOutlet weak var pizzaImage: UIImageView!
     @IBOutlet weak var pizzaButton: UIButton!
     @IBOutlet weak var pizzaName: UILabel!
@@ -14,40 +21,40 @@ class ViewController: UIViewController {
 
     @IBAction func clickPizzaButton(_ sender: Any) {
         /* ************************ */
-        /*  1. update counter       */
+        /*  2. update counter       */
         /* ************************ */
         // updateArrayCounter()
         
         /* ************************ */
-        /*  2. update pizza image   */
+        /*  3. update pizza image   */
         /* ************************ */
         // updatePizzaImage()
         
         /* ************************ */
-        /*  3. update pizza name    */
+        /*  4. update pizza name    */
         /* ************************ */
         // updatePizzaName()
         
         /* ************************ */
-        /*  4. rotate pizza image   */
+        /*  5. rotate pizza image   */
         /* ************************ */
-         rotateImage()
+        // rotateImage()
     }
     
     func updateArrayCounter() {
-        if counter < 4 {
-            counter += 1
-        } else {
-            counter = 0
-        }
+        // TODO: Fill in the blanks
+        // Goal: Loop through above pizza array so that the counter updates from 0 to the length
+        //       of the array, and then back to 0
     }
     
     func updatePizzaImage() {
-        pizzaImage.image = UIImage(named: pizzaImageArray[counter])
+        // TODO: Fill in the blanks
+        // Goal: Update pizza image
     }
     
     func updatePizzaName() {
-        pizzaName.text = pizzaImageArray[counter]
+        // TODO: Fill in the blanks
+        // Goal: Update pizza name
     }
     
     func rotateImage() {
