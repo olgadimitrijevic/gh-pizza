@@ -52,17 +52,16 @@ class ViewController: UIViewController {
         //        }
     }
     
-    func updatePizzaImage() {
-        // TODO: Fill in the blanks
-        // Goal: Update pizza image
-        //pizzaName.text = pizzaImageArray[counter]
-    }
-    
     func updatePizzaName() {
         // TODO: Fill in the blanks
         // Goal: Update pizza name
         //pizzaName.text = pizzaImageArray[counter]
-
+    }
+    
+    func updatePizzaImage() {
+        // TODO: Fill in the blanks
+        // Goal: Update pizza image
+        //pizzaImage.image = UIImage(named:pizzaImageArray[counter] )
     }
     
     func rotateImage() {
