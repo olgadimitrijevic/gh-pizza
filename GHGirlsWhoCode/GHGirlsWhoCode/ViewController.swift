@@ -45,16 +45,24 @@ class ViewController: UIViewController {
         // TODO: Fill in the blanks
         // Goal: Loop through above pizza array so that the counter updates from 0 to the length
         //       of the array, and then back to 0
+        //        if counter < 4 {
+        //            counter += 1
+        //        } else {
+        //            counter = 0
+        //        }
     }
     
     func updatePizzaImage() {
         // TODO: Fill in the blanks
         // Goal: Update pizza image
+        //pizzaName.text = pizzaImageArray[counter]
     }
     
     func updatePizzaName() {
         // TODO: Fill in the blanks
         // Goal: Update pizza name
+        //pizzaName.text = pizzaImageArray[counter]
+
     }
     
     func rotateImage() {
